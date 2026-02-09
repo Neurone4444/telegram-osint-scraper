@@ -230,7 +230,7 @@ class MessageData:
     reactions: Optional[str]
 
 
-class telegram-opsint:
+class telegram-osint:
     def __init__(self):
         self.state = self.load_state()
         self.client: Optional[TelegramClient] = None
@@ -1894,3 +1894,4 @@ if __name__ == "__main__":
         asyncio.run(main())
     except KeyboardInterrupt:
         print("\nInterrupted.")
+
