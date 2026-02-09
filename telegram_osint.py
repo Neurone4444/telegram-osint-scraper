@@ -1694,7 +1694,7 @@ th{background:#f6f6f6;}
         if dedup_csv:
             sections.append(("Duplicati semantici", f"<p><span class='badge'>CSV</span> <b>{dedup_csv}</b></p><p>Coppie near-duplicate (cosine ≥ {DEDUP_THRESHOLD}).</p>"))
 
-        rep = self._write_report_html(out_dir, "Telegram AI Report (offline)telegram-opsint", sections)
+        rep = self._write_report_html(out_dir, "Telegram AI Report (offline)telegramOsint", sections)
 
         manifest = {
             "generated_utc": now_utc_str(),
@@ -1730,7 +1730,7 @@ th{background:#f6f6f6;}
     async def manage_menu(self):
         while True:
             print("\n" + "=" * 46)
-            print("     telegram-opsint + AI")
+            print("     telegramOsint + AI")
             print("=" * 46)
             print("[S] Scrape channels")
             print("[C] Continuous scraping")
@@ -1872,7 +1872,7 @@ th{background:#f6f6f6;}
 
 
 def parse_args():
-    p = argparse.ArgumentParser(description="telegram-opsint + AI offline")
+    p = argparse.ArgumentParser(description="telegramOsint + AI offline")
     p.add_argument("--list", action="store_true", help="List channels and save channels_list.csv")
     p.add_argument("--add", type=str, default=None, help="Add channels from list selection (e.g., '1,3,5' or 'all')")
     p.add_argument("--scrape", type=str, default=None, help="Scrape selection (e.g., 'all' or '1,2')")
@@ -1885,7 +1885,7 @@ def parse_args():
 
 async def main():
     args = parse_args()
-    app = telegram-opsint()
+    app = telegramOsint()
     await app.run(args=args)
 
 
@@ -1894,5 +1894,6 @@ if __name__ == "__main__":
         asyncio.run(main())
     except KeyboardInterrupt:
         print("\nInterrupted.")
+
 
 
