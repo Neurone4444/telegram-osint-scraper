@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.session
+*.session-journal
+*.db
+*.sqlite
+*.sqlite3
+ai_reports/
+exports/
+-100*/
+*.log
+.vscode/
+.idea/
+.DS_Store

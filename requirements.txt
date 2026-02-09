@@ -1,0 +1,6 @@
+telethon
+pandas
+numpy
+scikit-learn
+sentence-transformers
+matplotlib
